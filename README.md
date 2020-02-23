@@ -1,6 +1,6 @@
 # Attendance-API using BeautifulSoup
-<img href="https://github.com/Priyanshuuu/Attendance-API/blob/master/Attendace.jpg"></img>
-
+<img href=""></img>
+![Result](https://github.com/Priyanshuuu/Attendance-API/blob/master/Attendace.jpg)
 ## How to Use/Run
 
 - Step1--> Open Google-Colab and create a new jupyter notebook file.
