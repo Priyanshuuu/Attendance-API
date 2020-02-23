@@ -8,10 +8,12 @@
 5. requests
 
 ## How to Run
-1. Open Google-Colab and create a new jupyter notebook file.
-2. Paste the code from *Attendace_App.py* file to notebook file.
-3. Connect you notebook file with Google colab cloud.
-4. Run the cell in which you have copied the code.
-5. Fill the credentials[Username, Password].
+'''
+Step1 Open Google-Colab and create a new jupyter notebook file.
+Step2 Paste the code from *Attendace_App.py* file to notebook file.
+Step3 Connect you notebook file with Google colab cloud.
+Step4 Run the cell in which you have copied the code.
+Step5 Fill the credentials[Username, Password].
+'''
 
-*Enjoy the hack* & follow me on Github :)
+*Enjoy the hack & follow me on Github for appreciation* :)
