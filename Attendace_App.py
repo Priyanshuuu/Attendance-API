@@ -31,7 +31,8 @@ def calc(username,password):
         soup = BeautifulSoup(dat.content, 'html.parser')
         links = [a['href'] for a in soup.find_all('a', href=True)]
         return links
-
+    
+    # Calculate total pages
     def pagecal(links):
         x = True 
         i = 2
