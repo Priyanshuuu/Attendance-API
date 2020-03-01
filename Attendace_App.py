@@ -16,14 +16,16 @@ def calc(username,password):
         'username': username,
         'password': password
     }
-
+    
+    # Session created for information scraping
     with requests.Session() as s:
         url = "http://app.bmiet.net/student/login"
         r = s.get(url, headers=header)
         soup = BeautifulSoup(r.content, 'html.parser')
         login_data['_token'] = soup.find('input', {'name': '_token'})['value']
         post = s.post('http://app.bmiet.net/student/student-login',login_data, headers=header)
-
+    
+    # Find all the links present on the curret page
     def link_finder():
         dat = s.get('http://app.bmiet.net/student/attendance/view',headers=header)
         soup = BeautifulSoup(dat.content, 'html.parser')
