@@ -50,4 +50,4 @@ def calc(username,password):
 
 username = input("Enter Username: ")
 password = input("Enter Password: ")
-
+calc(username,password)
