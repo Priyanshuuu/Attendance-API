@@ -51,8 +51,19 @@ def calc(username,password):
         res = re.findall(r'\w+', str(info.content))
         Tot_present += res.count('Present')
         Tot_absent += res.count('Absent')
-    print(' Total Present:',Tot_present,'| Total Absent:',Tot_absent,'\n','Total Attendance:',round((Tot_present/(Tot_present+Tot_absent))*100,2),'%')
+        Tot_attend = round((Tot_present/(Tot_present+Tot_absent))*100,2)
+    print(' Total Present:',Tot_present,'| Total Absent:',Tot_absent,'\n',f'Total Attendance: {Tot_attend} %')
+    
+    if Tot_attend < 75:
+        b = 0.75*(Tot_present+Tot_absent)
+        q = int(b-(Tot_present))
+        print(f" You Have to attend {q} classes")
+    elif Tot_attend > 75:
+        a = 0.75*(Tot_present+Tot_absent)
+        q = int((Tot_present)-a)
+        print(f' You Can bunk {q} classes')
 
+    
 username = input("Enter Username: ")
 password = input("Enter Password: ")
 calc(username,password)
